@@ -13,3 +13,11 @@ html {
     font-weight: inherit;
     font-size: inherit;
 }
+
+.occupedX {
+    background-color: red;
+}
+
+.occupedO {
+    background-color: blue;
+}
