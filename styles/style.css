@@ -14,10 +14,28 @@ html {
     font-size: inherit;
 }
 
-.occupedX {
-    background-color: red;
+.x {
+    background-color: rgb(229, 160, 160);
 }
 
-.occupedO {
-    background-color: blue;
+.o {
+    background-color: rgb(181, 181, 233);
+}
+
+.occuped {
+    
+}
+
+#board {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 40px 40px 40px;
+}
+
+.fieldElement {
+    height: 40px;
+    width: 40px;
 }
