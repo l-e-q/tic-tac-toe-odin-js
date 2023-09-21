@@ -26,13 +26,32 @@ html {
     
 }
 
+#result {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+}
+
 #board {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 40px 40px 40px;
+}
+
+.non-displied {
+    display: none;
+}
+
+#button-container {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    display: grid;
-    grid-template-columns: 40px 40px 40px;
+    transform: translate(-50%, 50%);
 }
 
 .fieldElement {
