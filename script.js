@@ -54,11 +54,14 @@ const screenController = (() => {
             });
             gameBoard.board.appendChild(fieldElement);
             startButton.innerHTML = (gameBoard.fields.includes('x') || gameBoard.fields.includes('o') || gameBoard.canMove) ? 'Restart' : 'Start';
+            if (gameBoard.winner || gameBoard.tie) {
+                resultElement.classList.remove('non-displied');
+                resultElement.innerText = gameBoard.winner ? gameBoard.winner : 'Tie';
+            } else {
+                resultElement.classList.add('non-displied')
+            }
         });
-        if (gameBoard.winner || gameBoard.tie) {
-            resultElement.classList.remove('non-displied');
-            resultElement.innerText = gameBoard.winner ? gameBoard.winner : 'Tie';
-        }
+        
     }
 
     startButton.addEventListener('click', () => {
