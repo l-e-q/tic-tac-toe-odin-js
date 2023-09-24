@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+    <header id="header">
+        <div class="wrapper">
+            <div id="header-content">
+                <div id="library-header-text">
+                    Tic Tac Toe
+                </div>
+                <div id="log-in">
+                    <button id="log-in-button">Log in</button>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
         <div id="result" class="non-displied">x is winner</div>
         <div id="border">
@@ -17,6 +29,18 @@
             <button class="button" id="start-button">Start</button>
         </div>
     </main>
+    <footer class="footer">
+        <p>
+            Copyright ©
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            l-e-q
+        </p>
+        <a href="https://github.com/l-e-q" target="_blank" id="github-logo-container">
+            <img src="./github-mark.png" id="github-logo"></img>
+        </a>
+    </footer>
     <script src="./script.js"></script>
 </body>
 </html>
